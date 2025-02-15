@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import React from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-      <div>
+      <div className='flex items-center text-red-600 justify-center'>
         <a href="https://vite.dev" target="_blank">
           <img src={viteLogo} className="logo" alt="Vite logo" />
         </a>
@@ -18,8 +18,8 @@ function App() {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
+      <h1>Redux</h1>
+      <div className="card flex flex-col gap-2">
         <button onClick={() => dispatch({type:"DEC"})}>
           -
         </button>
